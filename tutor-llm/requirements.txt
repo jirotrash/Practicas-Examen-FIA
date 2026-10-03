@@ -1,0 +1,2 @@
+ollama>=0.4
+flet[all]>=1.0

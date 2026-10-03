@@ -1,0 +1,16 @@
+# Credenciales y ajustes locales (NUNCA se suben)
+.env
+config.json
+
+# Archivos generados por la aplicación
+exportaciones/
+__pycache__/
+*.pyc
+reporte_riesgos.txt
+reporte_riesgos.json
+
+# Entornos virtuales y editores
+venv/
+.venv/
+.vscode/
+.idea/
