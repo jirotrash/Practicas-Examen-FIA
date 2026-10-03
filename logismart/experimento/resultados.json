@@ -1,0 +1,657 @@
+{
+  "fecha": "2026-10-03T03:40:24",
+  "modelo": "llama3.2",
+  "total_correos": 36,
+  "correos_informales": 6,
+  "clasificadores": [
+    {
+      "clasificador": "reglas",
+      "exactitud_categoria": 0.611,
+      "exactitud_prioridad": 0.528,
+      "exactitud_informal": 0.167,
+      "exactitud_formal": 0.7,
+      "exhaustividad_por_clase": {
+        "materiales_peligrosos": 0.5,
+        "sobrepeso": 0.6,
+        "acceso_no_autorizado": 0.4,
+        "falla_hardware": 0.6,
+        "falla_software": 1.0,
+        "somnolencia_conductor": 0.4,
+        "otro": 0.8
+      },
+      "latencia_promedio_ms": 0.04,
+      "latencia_mediana_ms": 0.04,
+      "matriz_confusion": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0,
+          3,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "clasificador": "llm",
+      "exactitud_categoria": 0.972,
+      "exactitud_prioridad": 0.833,
+      "exactitud_informal": 0.833,
+      "exactitud_formal": 1.0,
+      "exhaustividad_por_clase": {
+        "materiales_peligrosos": 1.0,
+        "sobrepeso": 1.0,
+        "acceso_no_autorizado": 1.0,
+        "falla_hardware": 1.0,
+        "falla_software": 1.0,
+        "somnolencia_conductor": 0.8,
+        "otro": 1.0
+      },
+      "latencia_promedio_ms": 1956.42,
+      "latencia_mediana_ms": 1786.19,
+      "matriz_confusion": [
+        [
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "clasificador": "hibrido",
+      "exactitud_categoria": 0.944,
+      "exactitud_prioridad": 0.778,
+      "exactitud_informal": 0.833,
+      "exactitud_formal": 0.967,
+      "exhaustividad_por_clase": {
+        "materiales_peligrosos": 1.0,
+        "sobrepeso": 1.0,
+        "acceso_no_autorizado": 0.8,
+        "falla_hardware": 1.0,
+        "falla_software": 1.0,
+        "somnolencia_conductor": 0.8,
+        "otro": 1.0
+      },
+      "latencia_promedio_ms": 1956.45,
+      "latencia_mediana_ms": 1786.23,
+      "matriz_confusion": [
+        [
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ]
+      ]
+    }
+  ],
+  "detalle": [
+    {
+      "id": 1,
+      "real": "materiales_peligrosos",
+      "informal": false,
+      "reglas": "materiales_peligrosos",
+      "llm": "materiales_peligrosos",
+      "hibrido": "materiales_peligrosos",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 7593.7
+    },
+    {
+      "id": 2,
+      "real": "materiales_peligrosos",
+      "informal": false,
+      "reglas": "otro",
+      "llm": "materiales_peligrosos",
+      "hibrido": "materiales_peligrosos",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1850.6
+    },
+    {
+      "id": 3,
+      "real": "materiales_peligrosos",
+      "informal": false,
+      "reglas": "otro",
+      "llm": "materiales_peligrosos",
+      "hibrido": "materiales_peligrosos",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 2227.0
+    },
+    {
+      "id": 4,
+      "real": "materiales_peligrosos",
+      "informal": true,
+      "reglas": "otro",
+      "llm": "materiales_peligrosos",
+      "hibrido": "materiales_peligrosos",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 2015.8
+    },
+    {
+      "id": 5,
+      "real": "materiales_peligrosos",
+      "informal": false,
+      "reglas": "materiales_peligrosos",
+      "llm": "materiales_peligrosos",
+      "hibrido": "materiales_peligrosos",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1781.4
+    },
+    {
+      "id": 6,
+      "real": "materiales_peligrosos",
+      "informal": false,
+      "reglas": "materiales_peligrosos",
+      "llm": "materiales_peligrosos",
+      "hibrido": "materiales_peligrosos",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1983.2
+    },
+    {
+      "id": 7,
+      "real": "sobrepeso",
+      "informal": false,
+      "reglas": "sobrepeso",
+      "llm": "sobrepeso",
+      "hibrido": "sobrepeso",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 2033.1
+    },
+    {
+      "id": 8,
+      "real": "sobrepeso",
+      "informal": false,
+      "reglas": "otro",
+      "llm": "sobrepeso",
+      "hibrido": "sobrepeso",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 2380.1
+    },
+    {
+      "id": 9,
+      "real": "sobrepeso",
+      "informal": true,
+      "reglas": "otro",
+      "llm": "sobrepeso",
+      "hibrido": "sobrepeso",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 2008.1
+    },
+    {
+      "id": 10,
+      "real": "sobrepeso",
+      "informal": false,
+      "reglas": "sobrepeso",
+      "llm": "sobrepeso",
+      "hibrido": "sobrepeso",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 2282.0
+    },
+    {
+      "id": 11,
+      "real": "sobrepeso",
+      "informal": false,
+      "reglas": "sobrepeso",
+      "llm": "sobrepeso",
+      "hibrido": "sobrepeso",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1904.7
+    },
+    {
+      "id": 12,
+      "real": "acceso_no_autorizado",
+      "informal": false,
+      "reglas": "acceso_no_autorizado",
+      "llm": "acceso_no_autorizado",
+      "hibrido": "acceso_no_autorizado",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1794.8
+    },
+    {
+      "id": 13,
+      "real": "acceso_no_autorizado",
+      "informal": false,
+      "reglas": "otro",
+      "llm": "acceso_no_autorizado",
+      "hibrido": "acceso_no_autorizado",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1550.6
+    },
+    {
+      "id": 14,
+      "real": "acceso_no_autorizado",
+      "informal": false,
+      "reglas": "materiales_peligrosos",
+      "llm": "acceso_no_autorizado",
+      "hibrido": "materiales_peligrosos",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1533.2
+    },
+    {
+      "id": 15,
+      "real": "acceso_no_autorizado",
+      "informal": true,
+      "reglas": "otro",
+      "llm": "acceso_no_autorizado",
+      "hibrido": "acceso_no_autorizado",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1664.9
+    },
+    {
+      "id": 16,
+      "real": "acceso_no_autorizado",
+      "informal": false,
+      "reglas": "acceso_no_autorizado",
+      "llm": "acceso_no_autorizado",
+      "hibrido": "acceso_no_autorizado",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1906.7
+    },
+    {
+      "id": 17,
+      "real": "falla_hardware",
+      "informal": false,
+      "reglas": "falla_hardware",
+      "llm": "falla_hardware",
+      "hibrido": "falla_hardware",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1860.1
+    },
+    {
+      "id": 18,
+      "real": "falla_hardware",
+      "informal": false,
+      "reglas": "falla_hardware",
+      "llm": "falla_hardware",
+      "hibrido": "falla_hardware",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1726.6
+    },
+    {
+      "id": 19,
+      "real": "falla_hardware",
+      "informal": true,
+      "reglas": "otro",
+      "llm": "falla_hardware",
+      "hibrido": "falla_hardware",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1733.5
+    },
+    {
+      "id": 20,
+      "real": "falla_hardware",
+      "informal": false,
+      "reglas": "sobrepeso",
+      "llm": "falla_hardware",
+      "hibrido": "falla_hardware",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1937.6
+    },
+    {
+      "id": 21,
+      "real": "falla_hardware",
+      "informal": false,
+      "reglas": "falla_hardware",
+      "llm": "falla_hardware",
+      "hibrido": "falla_hardware",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1701.6
+    },
+    {
+      "id": 22,
+      "real": "falla_software",
+      "informal": false,
+      "reglas": "falla_software",
+      "llm": "falla_software",
+      "hibrido": "falla_software",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1654.1
+    },
+    {
+      "id": 23,
+      "real": "falla_software",
+      "informal": false,
+      "reglas": "falla_software",
+      "llm": "falla_software",
+      "hibrido": "falla_software",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1828.7
+    },
+    {
+      "id": 24,
+      "real": "falla_software",
+      "informal": false,
+      "reglas": "falla_software",
+      "llm": "falla_software",
+      "hibrido": "falla_software",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1647.1
+    },
+    {
+      "id": 25,
+      "real": "falla_software",
+      "informal": true,
+      "reglas": "falla_software",
+      "llm": "falla_software",
+      "hibrido": "falla_software",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1547.6
+    },
+    {
+      "id": 26,
+      "real": "falla_software",
+      "informal": false,
+      "reglas": "falla_software",
+      "llm": "falla_software",
+      "hibrido": "falla_software",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1712.0
+    },
+    {
+      "id": 27,
+      "real": "somnolencia_conductor",
+      "informal": false,
+      "reglas": "somnolencia_conductor",
+      "llm": "somnolencia_conductor",
+      "hibrido": "somnolencia_conductor",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1511.4
+    },
+    {
+      "id": 28,
+      "real": "somnolencia_conductor",
+      "informal": false,
+      "reglas": "somnolencia_conductor",
+      "llm": "somnolencia_conductor",
+      "hibrido": "somnolencia_conductor",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1791.0
+    },
+    {
+      "id": 29,
+      "real": "somnolencia_conductor",
+      "informal": true,
+      "reglas": "otro",
+      "llm": "sobrepeso",
+      "hibrido": "sobrepeso",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1668.6
+    },
+    {
+      "id": 30,
+      "real": "somnolencia_conductor",
+      "informal": false,
+      "reglas": "falla_hardware",
+      "llm": "somnolencia_conductor",
+      "hibrido": "somnolencia_conductor",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1257.2
+    },
+    {
+      "id": 31,
+      "real": "somnolencia_conductor",
+      "informal": false,
+      "reglas": "otro",
+      "llm": "somnolencia_conductor",
+      "hibrido": "somnolencia_conductor",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1840.8
+    },
+    {
+      "id": 32,
+      "real": "otro",
+      "informal": false,
+      "reglas": "otro",
+      "llm": "otro",
+      "hibrido": "otro",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1675.5
+    },
+    {
+      "id": 33,
+      "real": "otro",
+      "informal": false,
+      "reglas": "otro",
+      "llm": "otro",
+      "hibrido": "otro",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1806.5
+    },
+    {
+      "id": 34,
+      "real": "otro",
+      "informal": false,
+      "reglas": "otro",
+      "llm": "otro",
+      "hibrido": "otro",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1700.6
+    },
+    {
+      "id": 35,
+      "real": "otro",
+      "informal": false,
+      "reglas": "otro",
+      "llm": "otro",
+      "hibrido": "otro",
+      "revision_humana": false,
+      "json_valido": true,
+      "latencia_llm_ms": 1626.6
+    },
+    {
+      "id": 36,
+      "real": "otro",
+      "informal": false,
+      "reglas": "falla_software",
+      "llm": "otro",
+      "hibrido": "otro",
+      "revision_humana": true,
+      "json_valido": true,
+      "latencia_llm_ms": 1694.1
+    }
+  ],
+  "json_validos_pct": 100.0,
+  "revision_humana_pct": 55.6
+}
